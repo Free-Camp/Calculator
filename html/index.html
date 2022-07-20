@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+  <head>
+    <link rel="stylesheet" href="/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CalculatorJS</title>
+  </head>
+  <body>
+    <nav>
+      <h1>Calculator<span>.JS</span></h1>
+    </nav>
+    <main>
+      <section>
+        <h1>Calculadora</h1>
+        <div class="inputContainer">
+          <div class="valorContainer">
+            <p>Digite um valor</p>
+            <input type="number" id="numero1" placeholder="x" />
+          </div>
+          <div class="valorContainer">
+            <p>Digite um valor</p>
+            <input type="number" id="numero2" placeholder="y" />
+          </div>
+        </div>
+        <p>Escolha uma função</p>
+        <div>
+          <button onclick="realizarOperacao('+')">+</button>
+          <button onclick="realizarOperacao('-')">-</button>
+          <button onclick="realizarOperacao('*')">x</button>
+          <button onclick="realizarOperacao('%')">/</button>
+          <!-- <button onclick="raiz()">raiz</button> -->
+        </div>
+        <div class="resultadoContainer">
+          <label id="resultado1"></label>
+          <!-- <label id="resultado2"></label> -->
+          <script src="/js/main.js"></script>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
